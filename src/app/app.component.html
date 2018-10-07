@@ -1,2 +1,9 @@
-<h1>{{title}}</h1>
+
+<div>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/SVGpath">It's SVG</button>
+  <button mat-menu-item routerLink="/cat">Cat</button>
+</mat-menu>
+</div>
 <router-outlet></router-outlet>

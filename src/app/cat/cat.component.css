@@ -1,0 +1,139 @@
+.blue-eyes .eye-color{
+  fill: blue;
+}
+.sad .mouth{
+  transform: rotate(180deg)scale(.5);
+  transform-origin: 340px 390px;
+}
+/**********************************/
+@keyframes moveEyes {
+  20% {
+    transform: translate(-18px, -20px);
+
+  }
+  40% {
+    transform: translate(0px, 0px);
+
+  }
+  65% {
+    transform: translate(18px, -20px);
+
+  }
+}
+.move-around .inner-eye-group{
+  animation: moveEyes 12s infinite;
+}
+/**********************************/
+
+/**********************************/
+  @keyframes moveright {
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+  }
+.shake{
+  animation: moveright 2s infinite;
+  transform-origin: 325px 350px;
+}
+/**********************************/
+
+/**********************************/
+@keyframes leftWhiskers {
+  20% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  }
+.move-around .left-whiskers{
+  animation: leftWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+/**********************************/
+
+/**********************************/
+
+  @keyframes rightWhiskers {
+  20% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  }
+.move-around .right-whiskers{
+  animation: rightWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+/**********************************/
+
+/**********************************/
+@keyframes move{
+  20%{
+    transform: rotatey(10deg) rotatex(10deg);
+  }
+
+  40%{
+    transform: rotatey(25deg) rotatex(10deg);
+  }
+  60%{
+    transform: rotatey(-10deg) rotatex(-10deg);
+  }
+  85%{
+    transform: rotatey(-10deg) rotatex(-16deg);
+  }
+}
+.move-around{
+  animation: move 8s infinite;
+}
+/**********************************/
+/**********************************/
+ @keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slide-in-right 2s ease-out both;
+  animation-delay:1s;
+}
+/**********************************/
+@keyframes roll-left {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(300px) rotate(360deg);
+    opacity: 1;
+  }
+}
+.roll-left {
+	animation: roll-left 0.6s ease-out both;
+}
+/**********************************/
+
+.svg-container{
+  perspective: 1000px;
+  
+}
+
+
+
+
+
